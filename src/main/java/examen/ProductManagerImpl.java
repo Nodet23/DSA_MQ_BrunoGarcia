@@ -136,7 +136,9 @@ public class ProductManagerImpl implements ProductManager{
                 Integer idea1 = new Integer(product1.getPrecio());
                 Integer idea2 = new Integer(product2.getPrecio());
                 return idea1.compareTo(idea2);
+
             }
+
         });
 
         return todosProductos;
