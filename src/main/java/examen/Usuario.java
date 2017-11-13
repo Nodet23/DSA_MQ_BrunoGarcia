@@ -1,5 +1,6 @@
+package examen;
+
 import java.util.HashMap;
-import java.util.List;
 
 /**
  * Created by nodet on 13/11/17.
@@ -9,6 +10,11 @@ public class Usuario {
     String name;
     String pass;
     HashMap<String, Pedido> mapaPedidos;
+
+    public Usuario (String nombre, String pass){
+        this.name = nombre;
+        this.pass = pass;
+    }
 
     public HashMap<String, Pedido> getMapaPedidos() {
         return mapaPedidos;

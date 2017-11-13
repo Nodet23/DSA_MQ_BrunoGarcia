@@ -1,3 +1,5 @@
+package examen;
+
 import java.util.*;
 
 import org.apache.log4j.Logger;
@@ -118,6 +120,7 @@ public class ProductManagerImpl implements ProductManager{
         if(instance==null){
             instance=new ProductManagerImpl();
             logger.info("Se ha creado la tabla");
+
         }
         return instance;
     }
@@ -277,5 +280,29 @@ public class ProductManagerImpl implements ProductManager{
         });
 
         return todosProductos;
+    }
+
+    public HashMap<String, Producto> getMapaProductos() {
+        return mapaProductos;
+    }
+
+    public void setMapaProductos(HashMap<String, Producto> mapaProductos) {
+        this.mapaProductos = mapaProductos;
+    }
+
+    public List<Pedido> getListaPedidosPendientes() {
+        return listaPedidosPendientes;
+    }
+
+    public void setListaPedidosPendientes(List<Pedido> listaPedidosPendientes) {
+        this.listaPedidosPendientes = listaPedidosPendientes;
+    }
+
+    public HashMap<String, Usuario> getMapaUsuarios() {
+        return mapaUsuarios;
+    }
+
+    public void setMapaUsuarios(HashMap<String, Usuario> mapaUsuarios) {
+        this.mapaUsuarios = mapaUsuarios;
     }
 }

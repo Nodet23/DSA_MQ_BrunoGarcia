@@ -1,3 +1,5 @@
+package examen;
+
 /**
  * Created by nodet on 13/11/17.
  */
@@ -8,6 +10,14 @@ public class Producto {
     Integer cantidad;
     Integer precio;
     Integer ventas;
+
+    public Producto(String name, String id, Integer cantidad, Integer precio, Integer ventas) {
+        this.name = name;
+        this.id = id;
+        this.cantidad = cantidad;
+        this.precio = precio;
+        this.ventas = ventas;
+    }
 
     public Integer getVentas() {
         return ventas;

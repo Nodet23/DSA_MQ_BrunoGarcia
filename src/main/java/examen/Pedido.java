@@ -1,3 +1,5 @@
+package examen;
+
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
@@ -13,6 +15,12 @@ public class Pedido {
     List<Producto> productos;
     boolean realizado;
 
+    public Pedido(String idPedido, String nombreUsuario, List<Producto> productos, boolean realizado) {
+        this.idPedido = idPedido;
+        this.nombreUsuario = nombreUsuario;
+        this.productos = productos;
+        this.realizado = realizado;
+    }
 
     public String getNombreUsuario() {
         return nombreUsuario;
